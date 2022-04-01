@@ -1,27 +1,32 @@
-# Simple Blog Website 
---
-Using HTML, CSS, Nodejs and MongoDB
---
+# Simple Blog Website
+
+## Using HTML, CSS, Nodejs and MongoDB
+
 ### Database collection structure
 
-Posts Table Will have => 
-    - id
-    - title
-    - summary
-    - body
-    - date
-    - author name + author id
+Posts Table Will have =>
 
-Authors Table will have 
-    - id
-    - name
-    - email
+- id
+- title
+- summary
+- body
+- date
+- author name + author id
+
+Authors Table will have
+
+- id
+- name
+- email
 
 Create mongoDB database
+
 ```
 use blog
 ```
+
 Create posts collections in mongodb
+
 ```
 db.posts.insertMany([
     {
@@ -34,7 +39,9 @@ db.posts.insertMany([
 }
 ])
 ```
+
 Create author collections in mongodb
+
 ```
 db.authors.insertMany([
 {
