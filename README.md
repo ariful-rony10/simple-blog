@@ -1,15 +1,21 @@
+# Simple Blog Website 
+--
+Using HTML, CSS, Nodejs and MongoDB
+--
+### Database collection structure
+
 Posts Table Will have => 
-- id
-- title
-- summary
-- body
-- date
-- author name + author id
+    - id
+    - title
+    - summary
+    - body
+    - date
+    - author name + author id
 
 Authors Table will have 
-- id
-- name
-- email
+    - id
+    - name
+    - email
 
 Create mongoDB database
 ```
