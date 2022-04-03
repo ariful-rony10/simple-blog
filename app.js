@@ -6,7 +6,7 @@ const blogRoutes = require("./routes/blog");
 
 const app = express();
 
-const db = require("./data/databsse");
+const db = require("./data/database");
 
 // Activate EJS view engine
 app.set("view engine", "ejs");
