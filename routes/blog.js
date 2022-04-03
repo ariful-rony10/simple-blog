@@ -51,7 +51,6 @@ router.post("/posts", async function (req, res) {
 router.get("/posts/:id", async (req, res) => {
   const postId = req.params.id;
   console.log(postId);
-  // const authorId = new ObjectId(req.body.id.trim())
   const post = await db
     .getDb()
     .collection("posts")
