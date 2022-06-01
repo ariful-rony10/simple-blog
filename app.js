@@ -3,10 +3,9 @@ const path = require('path');
 const express = require('express');
 
 const blogRoutes = require('./routes/blog');
+const db = require('./data/database');
 
 const app = express();
-
-const db = require('./data/database');
 
 // Activate EJS view engine
 app.set('view engine', 'ejs');
@@ -24,7 +23,6 @@ app.use(function (error, req, res, next) {
   res.status(500).render('500');
 });
 
-// Connect to data base
 db.connectToDatabase().then(function () {
   app.listen(3000);
 });
